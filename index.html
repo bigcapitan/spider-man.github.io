@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Человек-Паук</title>
+  <link rel="stylesheet" href="./styles/style.css"/>
+  <link rel="shortcut icon" href="./img/логотип.png" type="image/x-icon">
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo">
+      <h1>Человек-Паук</h1>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#hero">Главная</a></li>
+        <li><a href="#about">О персонаже</a></li>
+        <li><a href="#powers">Способности</a></li>
+        <li><a href="#movies">Фильмы</a></li>
+        <li><a href="#comics">Комиксы</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="hero">
+    <h2>Добро пожаловать в мир Человека-Паука</h2>
+    <p>Герой Нью-Йорка, символ надежды и справедливости.</p>
+    <img src="./img/челавик павик.webp" alt="Человек-Паук" class="spiderman-image">
+  </section>
+
+  <section id="about" class="fade-in">
+    <h2>О персонаже</h2>
+    <p>Человек-Паук — это супергерой из комиксов Marvel. Его настоящее имя — Питер Паркер. После укуса радиоактивного паука он получил сверхчеловеческие способности.Его воспитовали дядя Бен и тётя Мэй. После трагической гибели дяди Бена, Питер осознал, что с великой силой приходит великая ответственность. Это стало его жизненным кредо и мотивировало его использовать свои способности для борьбы с преступностью и защиты невинных.</p>
+  </section>
+
+  <section id="powers" class="fade-in">
+    <h2>Суперспособности</h2>
+    <ul class="powers-list">
+      <li>🕸 Паутиномёт — собственное изобретение, стреляет синтетической паутиной</li>
+      <li>🕷 Паучье чутьё — чувствует опасность до её появления</li>
+      <li>🧗‍♂️ Лазание по стенам — прилипает к поверхностям</li>
+      <li>💪 Сверхсила и ловкость — поднимает автомобили и быстро двигается</li>
+    </ul>
+  </section>
+  
+
+  <section id="movies" class="fade-in">
+    <h2>Фильмы с участием Человека-Паука</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Название фильма</th>
+          <th>Год</th>
+          <th>Актёр</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Человек-Паук</td>
+          <td>2002</td>
+          <td>Тоби Магуайр</td>
+        </tr>
+        <tr>
+          <td>Новый Человек-Паук</td>
+          <td>2012</td>
+          <td>Эндрю Гарфилд</td>
+        </tr>
+        <tr>
+          <td>Человек-Паук: Возвращение домой</td>
+          <td>2017</td>
+          <td>Том Холланд</td>
+        </tr>
+        <tr>
+          <td>Человек-Паук: Нет пути домой</td>
+          <td>2021</td>
+          <td>Все трое</td>
+        </tr>
+        <tr>
+            <td>Spider-Man: Into the Spider-Verse</td>
+            <td>2018</td>
+            <td>Шамеик Мур </td>
+          </tr>
+          <tr>
+            <td>Spider-Man: Across the Spider-Verse</td>
+            <td>2023</td>
+            <td>Шамеик Мур </td>
+          </tr>
+          <tr>
+            <td>Spider-Man: Beyond the Spider-Verse</td>
+            <td>Ожидается</td>
+            <td>Шамеик Мур </td>
+          </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="comics" class="fade-in">
+    <h2>Легендарные комиксы</h2>
+    <div class="comic-grid">
+      <div class="comic-card">
+        <img src="./img/комикс 15" alt="Amazing Fantasy #15">
+        <p><strong>Amazing Fantasy #15</strong><br>Первое появление Спайди (1962)</p>
+      </div>
+      <div class="comic-card">
+        <img src="./img/ночь когда умерла гвен стейси.jpg" alt="Death of Gwen Stacy">
+        <p><strong>The Night Gwen Stacy Died</strong><br>Один из самых трагичных моментов</p>
+      </div>
+      <div class="comic-card">
+        <img src="./img/ултимэйт.jpg" alt="Ultimate Spider-Man">
+        <p><strong>Ultimate Spider-Man</strong><br>Переосмысление классики</p>
+      </div>
+      <div class="comic-card">
+        <img src="./img/муйл марулис.jpg" alt="Spider-Verse">
+        <p><strong>Spider-Verse</strong><br>Все Человеки-Пауки вместе против Морлунов</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="favorite-hero" class="fade-in">
+    <h2>А какой герой вам нравится больше?</h2>
+    <form action="#" method="post" class="hero-form">
+      <label for="name">Имя:</label>
+      <input type="text" required id="name" name="name" placeholder="Введите ваше имя" required>
+  
+      <label for="email">Почта:</label>
+      <input type="email" id="email" required name="email" placeholder="Введите вашу почту" required>
+  
+      <label for="phone">Номер:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Введите ваш номер" required>
+  
+      <label for="message">Текст:</label>
+      <textarea id="message" required name="message" placeholder="Напишите ваше сообщение" rows="4" required></textarea>
+  
+      <button type="submit" class="btn">Отправить</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <ul class="site-links">
+        <li><a href="#hero">Главная</a></li>
+        <li><a href="#about">О персонаже</a></li>
+        <li><a href="#powers">Способности</a></li>
+        <li><a href="#movies">Участие в фильмах</a></li>
+        <li><a href="#comics">Комиксы</a></li>
+      </ul>
+      <ul class="social-links">
+        <li><a href="https://instagram.com" target="_blank"> <span class="icon"><img src="./img/instagram (2).png"</span></a></li>
+        <li><a href="https://t.me" target="_blank"> <span class="icon"><img src="./img/telegram (3).png" alt=""></span></a></li>
+      </ul>
+    </div>
+    <p>&copy; 2025 википедия героев.все права защищены</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,444 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #1a1a2e, #16213e);
+    color: #ffffff;
+}
+
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: linear-gradient(90deg, #1a1a2e, #16213e); /* Тёмный градиент */
+    color: #fff; /* Белый текст */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.main-header .logo h1 {
+    font-size: 24px;
+    font-family: 'Jura', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    color: #e50914; 
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav ul li {
+    margin: 0;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Белый текст */
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+    color: #ffcc00; /* Жёлтый текст при наведении */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8); /* Светящийся эффект */
+}
+
+#hero {
+    text-align: center;
+    color: #fff;
+    padding: 120px 20px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.spiderman-image {
+    max-width: 670px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #ffcc00;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+th, td {
+    border: 1px solid #fff;
+    padding: 12px;
+    text-align: left;
+    color: #fff;
+}
+
+th {
+    background-color: #e50914;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+tr:hover {
+    background-color: rgba(255, 204, 0, 0.2);
+}
+
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 20px;
+    color: #aaa;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+.comic-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.comic-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    width: 30%;
+    transition: transform 0.3s;
+}
+
+.comic-card img {
+    max-width: 100%;
+    border-radius: 5px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.comic-card:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.powers-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+}
+
+.powers-list li {
+    margin: 15px 0;
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 12px;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.powers-list li:hover {
+    background-color: rgba(255, 204, 0, 0.2);
+}
+
+blockquote {
+    border-left: 4px solid #ffcc00;
+    padding-left: 20px;
+    margin: 20px 0;
+    font-style: italic;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+th, td {
+    padding: 15px 20px;
+    text-align: left;
+}
+
+th {
+    background-color: #ff1e1e;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+td {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.03);
+    font-size: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s;
+}
+
+tr:hover td {
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    } to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#favorite-hero {
+    padding: 50px 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    text-align: center;
+    color: #fff;
+}
+
+#favorite-hero h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+.hero-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.hero-form label {
+    font-size: 16px;
+    color: #ffcc00;
+    text-align: left;
+}
+
+.hero-form input,
+.hero-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.hero-form input:focus,
+.hero-form textarea:focus {
+    border-color: #ffcc00;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.hero-form button {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-form button:hover {
+    background-color: #ff1f1f;
+    transform: scale(1.05);
+}
+
+.hero-form button:active {
+    transform: scale(0.95);
+}
+
+footer {
+    background-color: #1a1a2e;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 15px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #ffcc00;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #e50914;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-links li {
+    list-style: none;
+}
+
+.social-links li a {
+    text-decoration: none;
+    color: #ffcc00;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s ease;
+}
+
+.social-links li a:hover {
+    color: #e50914;
+}
+
+.social-links li .icon img {
+    width: 61px;
+    height: 61px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.social-links li a:hover .icon img {
+    transform: scale(1.2);
+}
+
+/* Адаптация для телефонов */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Уменьшаем общий размер шрифта */
+    }
+
+    .main-header {
+        flex-direction: column; /* Перестраиваем элементы хедера в колонку */
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    .main-header .logo h1 {
+        font-size: 20px; /* Уменьшаем размер логотипа */
+        margin-bottom: 10px;
+    }
+
+    .main-nav ul {
+        flex-direction: column; /* Ссылки навигации в колонку */
+        gap: 10px;
+        width: 100%;
+    }
+
+    .main-nav ul li a {
+        font-size: 14px; /* Уменьшаем размер текста ссылок */
+    }
+
+    #hero {
+        padding: 80px 10px; /* Уменьшаем отступы */
+        text-align: center;
+    }
+
+    .spiderman-image {
+        max-width: 100%; /* Изображение занимает всю ширину */
+        height: auto;
+    }
+
+    section {
+        padding: 40px 10px; /* Уменьшаем отступы секций */
+    }
+
+    h2 {
+        font-size: 22px; /* Уменьшаем размер заголовков */
+    }
+
+    .comic-grid {
+        flex-direction: column; /* Карточки в одну колонку */
+        gap: 15px;
+    }
+
+    .comic-card {
+        width: 100%; /* Карточки занимают всю ширину */
+    }
+
+    .hero-form {
+        max-width: 100%; /* Форма занимает всю ширину */
+        padding: 0 10px;
+    }
+
+    footer {
+        padding: 15px 10px; /* Уменьшаем отступы футера */
+    }
+
+    .footer-links {
+        flex-direction: column; /* Ссылки футера в колонку */
+        gap: 15px;
+    }
+
+    .social-links {
+        flex-direction: column; /* Социальные ссылки в колонку */
+        gap: 10px;
+    }
+}
